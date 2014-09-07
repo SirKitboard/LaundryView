@@ -4,111 +4,97 @@
 	<string name="app_name">LaundryView</string>
 	<string name="hello_world">Hello world!</string>
 	<string name="action_settings">Settings</string>
-	<string-array name="quads">
-		<string name="chapin">Chapin Apartments</string>
-		<string name="hquad">H Quad</string>
-		<string name="kelly">Kelly</string>
-		<string name="mendy">Mendelsohn Quad</string>
-		<string name="noble">Noble Halls</string>
-		<string name="roosevelt">Roosevelt Quad</string>
-		<string name="schomburg">Schomburg Apartments</string>
-		<string name="southhampton">Southampton</string>
-		<string name="tabler">Tabler Quad</string>
-		<string name="west">West Apartments</string>
-	</string-array>
-	<string-array name="chapin-arr">
-		<string name="bldgb">Building B</string>
-		<string name="bldgc">Building B</string>
-		<string name="bldgd">Building B</string>
-		<string name="bldge">Building B</string>
-	</string-array>
-	<string-array name="hquad-arr">
-		<string name="benAB">Benedict Wing A and B</string>
-		<string name="benDE">Benedict Wing D and E</string>
-		<string name="james">James</string>
-		<string name="langm">Langmuir</string>
-	</string-array>
-	<string-array name="kelly-arr">
-		<string name="baruch">Baruch</string>
-		<string name="dewey">Dewey</string>
-		<string name="eisen">Eisenhower</string>
-		<string name="hamil">Hamilton</string>
-		<string name="schick">Schick</string>
-	</string-array>
-	<string-array name="mendy-arr">
-		<string name="irving">Irving</string>
-		<string name="gray">Gray</string>
-		<string name="amman">Amman</string>
-		<string name="oniell">O'neill</string>
-	</string-array>
-	<string-array name="noble-arr">
-		<string name="lauterber">Lauterber</string>
-		<string name="yang">Yang</string>
-	</string-array>
-	<string-array name="roose-arr">
-		<string name="greelA">Greeley A</string>
-		<string name="greelB">Greeley B</string>
-		<string name="kellerA">Keller A</string>
-		<string name="kellerB">Keller B</string>
-		<string name="stimsonA">Stimson A</string>
-		<string name="stimsonB">Stimson B</string>
-		<string name="wagnerA">Wagner A</string>
-		<string name="wagnerB">Wagner B</string>
-	</string-array>
-	<string-array name="roth-arr">
-		<string name="cardozo">Cardozo</string>
-		<string name="gershwin">Gershwin</string>
-		<string name="hendrix">Hendrix</string>
-		<string name="mount">Mount</string>
-		<string name="whitman">Whitman</string>
-	</string-array>
-	<string-array name="schom-arr">
-		<string name="commons">Commons</string>
-	</string-array>
-	<string-array name="south-arr">
-		<string name="amagansett">Amagansett</string>
-		<string name="mattituck">Mattituck</string>
-		<string name="southhold">Southhold</string>
-	</string-array>
-	<string-array name="table-arr">
-		<string name="douglasA">Douglas A</string>
-		<string name="douglasB">Douglas B</string>
-		<string name="dresierA">Dreiser A</string>
-		<string name="dreiserB">Dreiser B</string>
-		<string name="handA">Hand A</string>
-		<string name="handB">Hand B</string>
-		<string name="sangerA">Sanger A</string>
-		<string name="sangerB">Sanger B</string>
-		<string name="toscanA">Toscanini A</string>
-		<string name="toscanB">Toscanini B</string>
-	</string-array>
-	<string-array name="west-arr">
-		<string name="bldgA1">Building A1</string>
-		<string name="bldgA2">Building A2</string>
-		<string name="bldgA3">Building A3</string>
-		<string name="bldgB1">Building B1</string>
-		<string name="bldgB2">Building B2</string>
-		<string name="bldgB3">Building B2</string>
-		<string name="bldgC1">Building C1</string>
-		<string name="bldgC2">Building C2</string>
-		<string name="bldgC3">Building C3</string>
-		<string name="bldgD1">Building D1</string>
-		<string name="bldgD2">Building D1</string>
-		<string name="bldgD3">Building D1</string>
-		<string name="bldgE1">Building E1</string>
-		<string name="bldgE2">Building E2</string>
-		<string name="bldgE3">Building E3</string>
-		<string name="bldgF1">Building F1</string>
-		<string name="bldgF2">Building F2</string>
-		<string name="bldgF3">Building F3</string>
-		<string name="bldgG1">Building G1</string>
-		<string name="bldgG2">Building G2</string>
-		<string name="bldgG3">Building G3</string>
-		<string name="bldgH1">Building H1</string>
-		<string name="bldgH2">Building H2</string>
-		<string name="bldgH3">Building H3</string>
-		<string name="bldgI1">Building I1</string>
-		<string name="bldgI2">Building I2</string>
-		<string name="bldgI3">Building I3</string>
-	</string-array>
+	<string name="chapin">Chapin Apartments</string>
+	<string name="hquad">H Quad</string>
+	<string name="kelly">Kelly</string>
+	<string name="mendy">Mendelsohn Quad</string>
+	<string name="noble">Noble Halls</string>
+	<string name="roosevelt">Roosevelt Quad</string>
+
+	<string name="schomburg">Schomburg Apartments</string>
+	<string name="southhampton">Southampton</string>
+	<string name="tabler">Tabler Quad</string>
+	<string name="west">West Apartments</string>
+
+	<string name="bldgb">Building B</string>
+	<string name="bldgc">Building B</string>
+	<string name="bldgd">Building B</string>
+	<string name="bldge">Building B</string>
+
+	<string name="benAB">Benedict Wing A and B</string>
+	<string name="benDE">Benedict Wing D and E</string>
+	<string name="james">James</string>
+	<string name="langm">Langmuir</string>
+
+	<string name="baruch">Baruch</string>
+	<string name="dewey">Dewey</string>
+	<string name="eisen">Eisenhower</string>
+	<string name="hamil">Hamilton</string>
+	<string name="schick">Schick</string>
+
+	<string name="irving">Irving</string>
+	<string name="gray">Gray</string>
+	<string name="amman">Amman</string>
+	<string name="oniell">O'neill</string>
+
+	<string name="lauterber">Lauterber</string>
+	<string name="yang">Yang</string>
+
+	<string name="greelA">Greeley A</string>
+	<string name="greelB">Greeley B</string>
+	<string name="kellerA">Keller A</string>
+	<string name="kellerB">Keller B</string>
+	<string name="stimsonA">Stimson A</string>
+	<string name="stimsonB">Stimson B</string>
+	<string name="wagnerA">Wagner A</string>
+	<string name="wagnerB">Wagner B</string>
+
+	<string name="cardozo">Cardozo</string>
+	<string name="gershwin">Gershwin</string>
+	<string name="hendrix">Hendrix</string>
+	<string name="mount">Mount</string>
+	<string name="whitman">Whitman</string>
+
+	<string name="amagansett">Amagansett</string>
+	<string name="mattituck">Mattituck</string>
+	<string name="southhold">Southhold</string>
+
+	<string name="douglasA">Douglas A</string>
+	<string name="douglasB">Douglas B</string>
+	<string name="dresierA">Dreiser A</string>
+	<string name="dreiserB">Dreiser B</string>
+	<string name="handA">Hand A</string>
+	<string name="handB">Hand B</string>
+	<string name="sangerA">Sanger A</string>
+	<string name="sangerB">Sanger B</string>
+	<string name="toscanA">Toscanini A</string>
+	<string name="toscanB">Toscanini B</string>
+
+	<string name="bldgA1">Building A1</string>
+	<string name="bldgA2">Building A2</string>
+	<string name="bldgA3">Building A3</string>
+	<string name="bldgB1">Building B1</string>
+	<string name="bldgB2">Building B2</string>
+	<string name="bldgB3">Building B2</string>
+	<string name="bldgC1">Building C1</string>
+	<string name="bldgC2">Building C2</string>
+	<string name="bldgC3">Building C3</string>
+	<string name="bldgD1">Building D1</string>
+	<string name="bldgD2">Building D1</string>
+	<string name="bldgD3">Building D1</string>
+	<string name="bldgE1">Building E1</string>
+	<string name="bldgE2">Building E2</string>
+	<string name="bldgE3">Building E3</string>
+	<string name="bldgF1">Building F1</string>
+	<string name="bldgF2">Building F2</string>
+	<string name="bldgF3">Building F3</string>
+	<string name="bldgG1">Building G1</string>
+	<string name="bldgG2">Building G2</string>
+	<string name="bldgG3">Building G3</string>
+	<string name="bldgH1">Building H1</string>
+	<string name="bldgH2">Building H2</string>
+	<string name="bldgH3">Building H3</string>
+	<string name="bldgI1">Building I1</string>
+	<string name="bldgI2">Building I2</string>
+	<string name="bldgI3">Building I3</string>
 </resources>
