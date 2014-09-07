@@ -1,17 +1,19 @@
 package io.github.adibalwani03.laundryview;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
-public class MyActivity extends Activity {
+public class MainMenuActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_main_menu);
     }
 
 
@@ -33,4 +35,10 @@ public class MyActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+	public void mendy(View v) {
+		Intent intent = new Intent(this, quadMenu.class);
+		intent.putExtra("quad","mendy");
+		startActivity(intent);
+	}
 }

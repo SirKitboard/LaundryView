@@ -14,77 +14,77 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/chapin"
-			android:text="Chapin"
+			android:text="@string/chapin"
 			android:onClick="chapin"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/hquad"
-			android:text="H Quad"
+			android:text="@string/hquad"
 			android:onClick="hquad"
 			android:layout_below="@+id/chapin"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/kelly"
-			android:text="@string/hquad"
-			android:onClick="H Quad"
-			android:layout_below="@+id/chapin"/>
+			android:text="@string/kelly"
+			android:onClick="kelly"
+			android:layout_below="@+id/hquad"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/hquad"
-			android:text="@string/hquad"
-			android:onClick="H Quad"
-			android:layout_below="@+id/chapin"/>
+			android:id="@+id/mendy"
+			android:text="@string/mendy"
+			android:onClick="mendy"
+			android:layout_below="@+id/kelly"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/hquad"
-			android:text="@string/hquad"
-			android:onClick="H Quad"
-			android:layout_below="@+id/chapin"/>
+			android:id="@+id/noble"
+			android:text="@string/noble"
+			android:onClick="noble"
+			android:layout_below="@+id/mendy"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/hquad"
-			android:text="@string/hquad"
-			android:onClick="H Quad"
-			android:layout_below="@+id/chapin"/>
+			android:id="@+id/roose"
+			android:text="@string/roosevelt"
+			android:onClick="roose"
+			android:layout_below="@+id/noble"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/hquad"
-			android:text="@string/hquad"
-			android:onClick="H Quad"
-			android:layout_below="@+id/chapin"/>
+			android:id="@+id/roth"
+			android:text="@string/roth"
+			android:onClick="roth"
+			android:layout_below="@+id/roose"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/hquad"
-			android:text="@string/hquad"
-			android:onClick="H Quad"
-			android:layout_below="@+id/chapin"/>
+			android:id="@+id/schomb"
+			android:text="@string/schomburg"
+			android:onClick="schomb"
+			android:layout_below="@+id/roth"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/hquad"
-			android:text="@string/hquad"
-			android:onClick="H Quad"
-			android:layout_below="@+id/chapin"/>
+			android:id="@+id/tabler"
+			android:text="@string/tabler"
+			android:onClick="tablerd"
+			android:layout_below="@+id/schomb"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/hquad"
-			android:text="@string/hquad"
-			android:onClick="H Quad"
-			android:layout_below="@+id/chapin"/>
+			android:id="@+id/west"
+			android:text="@string/west"
+			android:onClick="west"
+			android:layout_below="@+id/tabler"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/hquad"
-			android:text="@string/hquad"
-			android:onClick="H Quad"
-			android:layout_below="@+id/chapin"/>
+			android:id="@+id/south"
+			android:text="@string/southhampton"
+			android:onClick="south"
+			android:layout_below="@+id/west"/>
 	</RelativeLayout>
 </ScrollView>
