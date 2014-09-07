@@ -63,12 +63,52 @@
 		<string name="whitman">Whitman</string>
 	</string-array>
 	<string-array name="schom-arr">
-
+		<string name="commons">Commons</string>
+	</string-array>
+	<string-array name="south-arr">
+		<string name="amagansett">Amagansett</string>
+		<string name="mattituck">Mattituck</string>
+		<string name="southhold">Southhold</string>
 	</string-array>
 	<string-array name="table-arr">
-
+		<string name="douglasA">Douglas A</string>
+		<string name="douglasB">Douglas B</string>
+		<string name="dresierA">Dreiser A</string>
+		<string name="dreiserB">Dreiser B</string>
+		<string name="handA">Hand A</string>
+		<string name="handB">Hand B</string>
+		<string name="sangerA">Sanger A</string>
+		<string name="sangerB">Sanger B</string>
+		<string name="toscanA">Toscanini A</string>
+		<string name="toscanB">Toscanini B</string>
 	</string-array>
 	<string-array name="west-arr">
-
+		<string name="bldgA1">Building A1</string>
+		<string name="bldgA2">Building A2</string>
+		<string name="bldgA3">Building A3</string>
+		<string name="bldgB1">Building B1</string>
+		<string name="bldgB2">Building B2</string>
+		<string name="bldgB3">Building B2</string>
+		<string name="bldgC1">Building C1</string>
+		<string name="bldgC2">Building C2</string>
+		<string name="bldgC3">Building C3</string>
+		<string name="bldgD1">Building D1</string>
+		<string name="bldgD2">Building D1</string>
+		<string name="bldgD3">Building D1</string>
+		<string name="bldgE1">Building E1</string>
+		<string name="bldgE2">Building E2</string>
+		<string name="bldgE3">Building E3</string>
+		<string name="bldgF1">Building F1</string>
+		<string name="bldgF2">Building F2</string>
+		<string name="bldgF3">Building F3</string>
+		<string name="bldgG1">Building G1</string>
+		<string name="bldgG2">Building G2</string>
+		<string name="bldgG3">Building G3</string>
+		<string name="bldgH1">Building H1</string>
+		<string name="bldgH2">Building H2</string>
+		<string name="bldgH3">Building H3</string>
+		<string name="bldgI1">Building I1</string>
+		<string name="bldgI2">Building I2</string>
+		<string name="bldgI3">Building I3</string>
 	</string-array>
 </resources>
