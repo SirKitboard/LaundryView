@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">LaundryView</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Settings</string>
+	<string-array name="quads">
+		<string name="chapin">Chapin Apartments</string>
+		<string name="hquad">H Quad</string>
+		<string name="kelly">Kelly</string>
+		<string name="mendy">Mendelsohn Quad</string>
+		<string name="noble">Noble Halls</string>
+		<string name="roosevelt">Roosevelt Quad</string>
+		<string name="schomburg">Schomburg Apartments</string>
+		<string name="southhampton">Southampton</string>
+		<string name="tabler">Tabler Quad</string>
+		<string name="west">West Apartments</string>
+	</string-array>
+	<string-array name="chapin-arr">
+		<string name="bldgb">Building B</string>
+		<string name="bldgc">Building B</string>
+		<string name="bldgd">Building B</string>
+		<string name="bldge">Building B</string>
+	</string-array>
+	<string-array name="hquad-arr">
+		<string name="benAB">Benedict Wing A and B</string>
+		<string name="benDE">Benedict Wing D and E</string>
+		<string name="james">James</string>
+		<string name="langm">Langmuir</string>
+	</string-array>
+	<string-array name="kelly-arr">
+		<string name="baruch">Baruch</string>
+		<string name="dewey">Dewey</string>
+		<string name="eisen">Eisenhower</string>
+		<string name="hamil">Hamilton</string>
+		<string name="schick">Schick</string>
+	</string-array>
+	<string-array name="mendy-arr">
+		<string name="irving">Irving</string>
+		<string name="gray">Gray</string>
+		<string name="amman">Amman</string>
+		<string name="oniell">O'neill</string>
+	</string-array>
+	<string-array name="noble-arr">
+		<string name="lauterber">Lauterber</string>
+		<string name="yang">Yang</string>
+	</string-array>
+	<string-array name="roose-arr">
+		<string name="greelA">Greeley A</string>
+		<string name="greelB">Greeley B</string>
+		<string name="kellerA">Keller A</string>
+		<string name="kellerB">Keller B</string>
+		<string name="stimsonA">Stimson A</string>
+		<string name="stimsonB">Stimson B</string>
+		<string name="wagnerA">Wagner A</string>
+		<string name="wagnerB">Wagner B</string>
+	</string-array>
+	<string-array name="roth-arr">
+		<string name="cardozo">Cardozo</string>
+		<string name="gershwin">Gershwin</string>
+		<string name="hendrix">Hendrix</string>
+		<string name="mount">Mount</string>
+		<string name="whitman">Whitman</string>
+	</string-array>
+	<string-array name="schom-arr">
+
+	</string-array>
+	<string-array name="table-arr">
+
+	</string-array>
+	<string-array name="west-arr">
+
+	</string-array>
+</resources>
