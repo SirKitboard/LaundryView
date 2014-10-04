@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="?android:attr/listPreferredItemHeight"
+			  android:padding="10dp">
+	<ImageView
+		android:contentDescription="Availability"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:id="@+id/statusImage"/>
+	<TextView
+		android:id="@+id/machineNo"
+		android:layout_toRightOf="@id/statusImage"
+		android:layout_toEndOf="@id/statusImage"
+		android:layout_width="fill_parent"
+		android:layout_height="35dp"
+        android:textIsSelectable="false"
+        android:textSize="20dp" />
+
+	<TextView
+		android:id="@+id/machineTime"
+		android:layout_below="@id/machineNo"
+		android:layout_toRightOf="@id/statusImage"
+		android:layout_toEndOf="@id/statusImage"
+		android:layout_width="fill_parent"
+		android:layout_height="20dp"
+        android:textSize="15dp" />
+
+
+
+
+</RelativeLayout>

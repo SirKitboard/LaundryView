@@ -11,8 +11,17 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    signingConfigs {
+        release {
+            storeFile file("C:\\Users\\Aditya\\AndroidKeyStore\\adiKey.jks")
+            storePassword "AstrOBOY03"
+            keyAlias "adi"
+            keyPassword "AstrOBOY03"
+        }
+    }
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

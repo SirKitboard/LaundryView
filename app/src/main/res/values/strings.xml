@@ -14,23 +14,10 @@
     <string name="southhampton">Southampton</string>
     <string name="tabler">Tabler Quad</string>
     <string name="west">West Apartments</string>
-    <string name="bldgb">Building B</string>
-    <string name="bldgc">Building B</string>
-    <string name="bldgd">Building B</string>
-    <string name="bldge">Building B</string>
-    <string name="benAB">Benedict Wing A and B</string>
-    <string name="benDE">Benedict Wing D and E</string>
-    <string name="james">James</string>
-    <string name="langm">Langmuir</string>
-    <string name="baruch">Baruch</string>
-    <string name="dewey">Dewey</string>
-    <string name="eisen">Eisenhower</string>
-    <string name="hamil">Hamilton</string>
-    <string name="schick">Schick</string>
 
     <string-array name="mendyarr">
         <item name="irving">Irving</item>
-        <item name="gray">Gray</item>g>
+        <item name="gray">Gray</item>
         <item name="amman">Amman</item>
         <item name="oniell">O\'neill</item>
     </string-array>
@@ -42,62 +29,205 @@
         <item name="oniel">88000530</item>
     </integer-array>
 
-    <string name="lauterber">Lauterber</string>
-    <string name="yang">Yang</string>
-    <string name="greelA">Greeley A</string>
-    <string name="greelB">Greeley B</string>
-    <string name="kellerA">Keller A</string>
-    <string name="kellerB">Keller B</string>
-    <string name="stimsonA">Stimson A</string>
-    <string name="stimsonB">Stimson B</string>
-    <string name="wagnerA">Wagner A</string>
-    <string name="wagnerB">Wagner B</string>
-    <string name="cardozo">Cardozo</string>
-    <string name="gershwin">Gershwin</string>
-    <string name="hendrix">Hendrix</string>
-    <string name="mount">Mount</string>
-    <string name="whitman">Whitman</string>
-    <string name="amagansett">Amagansett</string>
-    <string name="mattituck">Mattituck</string>
-    <string name="southhold">Southhold</string>
-    <string name="douglasA">Douglas A</string>
-    <string name="douglasB">Douglas B</string>
-    <string name="dresierA">Dreiser A</string>
-    <string name="dreiserB">Dreiser B</string>
-    <string name="handA">Hand A</string>
-    <string name="handB">Hand B</string>
-    <string name="sangerA">Sanger A</string>
-    <string name="sangerB">Sanger B</string>
-    <string name="toscanA">Toscanini A</string>
-    <string name="toscanB">Toscanini B</string>
-    <string name="bldgA1">Building A1</string>
-    <string name="bldgA2">Building A2</string>
-    <string name="bldgA3">Building A3</string>
-    <string name="bldgB1">Building B1</string>
-    <string name="bldgB2">Building B2</string>
-    <string name="bldgB3">Building B2</string>
-    <string name="bldgC1">Building C1</string>
-    <string name="bldgC2">Building C2</string>
-    <string name="bldgC3">Building C3</string>
-    <string name="bldgD1">Building D1</string>
-    <string name="bldgD2">Building D1</string>
-    <string name="bldgD3">Building D1</string>
-    <string name="bldgE1">Building E1</string>
-    <string name="bldgE2">Building E2</string>
-    <string name="bldgE3">Building E3</string>
-    <string name="bldgF1">Building F1</string>
-    <string name="bldgF2">Building F2</string>
-    <string name="bldgF3">Building F3</string>
-    <string name="bldgG1">Building G1</string>
-    <string name="bldgG2">Building G2</string>
-    <string name="bldgG3">Building G3</string>
-    <string name="bldgH1">Building H1</string>
-    <string name="bldgH2">Building H2</string>
-    <string name="bldgH3">Building H3</string>
-    <string name="bldgI1">Building I1</string>
-    <string name="bldgI2">Building I2</string>
-    <string name="bldgI3">Building I3</string>
-    <string name="title_activity_mendy">mendy</string>
+    <string-array name="rotharr">
+        <item name="cardozo">Cardozo</item>
+        <item name="gershwin">Gershwin</item>
+        <item name="hendrix">Hendrix</item>
+        <item name="mount">Mount</item>
+        <item name="whitman">Whitman</item>
+    </string-array>
+
+    <integer-array name="rothids">
+        <item name="cardozo">88000524</item>
+        <item name="cardozo">88000527</item>
+        <item name="cardozo">88000526</item>
+        <item name="cardozo">88000525</item>
+        <item name="cardozo">88000528</item>
+    </integer-array>
+
+    <string-array name="chaparr">
+        <item name="bldgb">Building B</item>
+        <item name="bldgc">Building C</item>
+        <item name="bldge">Building E</item>
+        <item name="bldgk">Building K</item>
+    </string-array>
+
+    <integer-array name="chapids">
+        <item name="bldgb">88000538</item>
+        <item name="bldgc">88000539</item>
+        <item name="bldge">88000540</item>
+        <item name="bldgk">88000541</item>
+    </integer-array>
+
+    <string-array name="hquadarr">
+        <item name="benedictab">Benedict AB</item>
+        <item name="benedictde">Benedict DE</item>
+        <item name="james">James</item>
+        <item name="langmuir">Langmuir</item>
+    </string-array>
+
+    <integer-array name="hquadids">
+        <item name="benedictab">88000533</item>
+        <item name="benedictde">88000534</item>
+        <item name="james">88000535</item>
+        <item name="langmuirb">88000536</item>
+    </integer-array>
+
+    <string-array name="kellyarr">
+        <item name="baruch">Baruch</item>
+        <item name="dewey">Dewey</item>
+        <item name="eisenhower">Eisenhower</item>
+        <item name="hamilton">Hamilton</item>
+        <item name="Schick">Schick</item>
+    </string-array>
+
+    <integer-array name="kellyids">
+        <item name="baruch">88000552</item>
+        <item name="dewey">88000551</item>
+        <item name="eisenhower">88000553</item>
+        <item name="hamilton">88000555</item>
+        <item name="Schick">88000554</item>
+    </integer-array>
+
+    <string-array name="noblearr">
+        <item name="lauterber">Lauterber</item>
+        <item name="yang">Yang</item>
+    </string-array>
+
+    <integer-array name="noblidse">
+        <item name="lauterber">88000569</item>
+        <item name="yang">88000570</item>
+    </integer-array>
+
+    <string-array name="roosearr">
+        <item name="greelA">Greeley A</item>
+        <item name="greelB">Greeley B</item>
+        <item name="kellerA">Keller A</item>
+        <item name="kellerB">Keller B</item>
+        <item name="stimsonA">Stimson A</item>
+        <item name="stimsonB">Stimson B</item>
+        <item name="wagnerA">Wagner A</item>
+        <item name="wagnerB">Wagner B</item>
+    </string-array>
+
+    <integer-array name="rooseids">
+        <item name="greelA">88000510</item>
+        <item name="greelB">88000511</item>
+        <item name="kellerA">8800058</item>
+        <item name="kellerB">8800059</item>
+        <item name="stimsonA">8800056</item>
+        <item name="stimsonB">8800057</item>
+        <item name="wagnerA">88000512</item>
+        <item name="wagnerB">88000513</item>
+    </integer-array>
+
+    <string-array name="schomarr">
+        <item name="commons">Commons</item>
+    </string-array>
+
+    <integer-array name="schomids">
+        <item name="commons">88000537</item>
+    </integer-array>
+
+    <string-array name="southarr">
+        <item name="amagansett">Amagansett</item>
+        <item name="mattituck">Mattituck</item>
+        <item name="southhold">Southhold</item>
+    </string-array>
+
+    <integer-array name="southids">
+        <item name="amagansett">88000571</item>
+        <item name="mattituck">88000573</item>
+        <item name="southhold">88000572</item>
+    </integer-array>
+
+    <string-array name="tablarr">
+        <item name="douglasA">Douglas A</item>
+        <item name="douglasB">Douglas B</item>
+        <item name="dresierA">Dreiser A</item>
+        <item name="dreiserB">Dreiser B</item>
+        <item name="handA">Hand A</item>
+        <item name="handB">Hand B</item>
+        <item name="sangerA">Sanger A</item>
+        <item name="sangerB">Sanger B</item>
+        <item name="toscanA">Toscanini A</item>
+        <item name="toscanB">Toscanini B</item>
+    </string-array>
+
+    <integer-array name="tablids">
+        <item name="douglasA">88000514</item>
+        <item name="douglasB">88000515</item>
+        <item name="dresierA">88000516</item>
+        <item name="dreiserB">88000517</item>
+        <item name="handA">88000522</item>
+        <item name="handB">88000523</item>
+        <item name="sangerA">88000518</item>
+        <item name="sangerB">88000519</item>
+        <item name="toscanA">88000520</item>
+        <item name="toscanB">88000521</item>
+    </integer-array>
+
+    <string-array name="westarr">
+        <item name="bldgA1">88000542</item>
+        <item name="bldgA2">88000543</item>
+        <item name="bldgA3">88000544</item>
+        <item name="bldgB1">88000545</item>
+        <item name="bldgB2">88000545</item>
+        <item name="bldgB3">88000546</item>
+        <item name="bldgC1">88000548</item>
+        <item name="bldgC2">88000549</item>
+        <item name="bldgC3">88000550</item>
+        <item name="bldgD1">88000551</item>
+        <item name="bldgD2">88000552</item>
+        <item name="bldgD3">88000553</item>
+        <item name="bldgE1">88000554</item>
+        <item name="bldgE2">88000555</item>
+        <item name="bldgE3">88000556</item>
+        <item name="bldgF1">88000557</item>
+        <item name="bldgF2">88000558</item>
+        <item name="bldgF3">88000559</item>
+        <item name="bldgG1">88000560</item>
+        <item name="bldgG2">88000561</item>
+        <item name="bldgG3">88000562</item>
+        <item name="bldgH1">88000563</item>
+        <item name="bldgH2">88000564</item>
+        <item name="bldgH3">88000565</item>
+        <item name="bldgI1">88000566</item>
+        <item name="bldgI2">88000567</item>
+        <item name="bldgI3">88000568</item>
+    </string-array>
+
+    <integer-array name="westids">
+        <item name="bldgA1">Building A1</item>
+        <item name="bldgA2">Building A2</item>
+        <item name="bldgA3">Building A3</item>
+        <item name="bldgB1">Building B1</item>
+        <item name="bldgB2">Building B2</item>
+        <item name="bldgB3">Building B2</item>
+        <item name="bldgC1">Building C1</item>
+        <item name="bldgC2">Building C2</item>
+        <item name="bldgC3">Building C3</item>
+        <item name="bldgD1">Building D1</item>
+        <item name="bldgD2">Building D1</item>
+        <item name="bldgD3">Building D1</item>
+        <item name="bldgE1">Building E1</item>
+        <item name="bldgE2">Building E2</item>
+        <item name="bldgE3">Building E3</item>
+        <item name="bldgF1">Building F1</item>
+        <item name="bldgF2">Building F2</item>
+        <item name="bldgF3">Building F3</item>
+        <item name="bldgG1">Building G1</item>
+        <item name="bldgG2">Building G2</item>
+        <item name="bldgG3">Building G3</item>
+        <item name="bldgH1">Building H1</item>
+        <item name="bldgH2">Building H2</item>
+        <item name="bldgH3">Building H3</item>
+        <item name="bldgI1">Building I1</item>
+        <item name="bldgI2">Building I2</item>
+        <item name="bldgI3">Building I3</item>
+    </integer-array>
+
+    <string name="title_activity_mendy">Quad Menu</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_building">building</string>
 

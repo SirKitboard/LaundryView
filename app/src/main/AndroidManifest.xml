@@ -19,11 +19,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".quadMenu"
+            android:name=".QuadMenu"
             android:label="@string/title_activity_mendy" >
         </activity>
         <activity
-            android:name=".building"
+            android:name=".Building"
             android:label="@string/title_activity_building" >
         </activity>
     </application>
