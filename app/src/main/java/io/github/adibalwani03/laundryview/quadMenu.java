@@ -33,6 +33,60 @@ public class QuadMenu extends Activity {
             ids = getResources().getIntArray(R.array.rothids);
             createMenu();
         }
+        else if (quad.equals("kelly")) {
+            setTitle("Kelly Quad");
+            bldgNames = getResources().getStringArray(R.array.kellyarr);
+            ids = getResources().getIntArray(R.array.kellyids);
+            createMenu();
+        }
+        else if (quad.equals("table")) {
+            setTitle("Tabler Quad");
+            bldgNames = getResources().getStringArray(R.array.tablarr);
+            ids = getResources().getIntArray(R.array.tablids);
+            createMenu();
+        }
+        else if (quad.equals("roose")) {
+            setTitle("Roosevelt Quad");
+            bldgNames = getResources().getStringArray(R.array.roosearr);
+            ids = getResources().getIntArray(R.array.rooseids);
+            createMenu();
+        }
+        else if (quad.equals("south")) {
+            setTitle("Southampton");
+            bldgNames = getResources().getStringArray(R.array.southarr);
+            ids = getResources().getIntArray(R.array.southids);
+            createMenu();
+        }
+        else if (quad.equals("schom")) {
+            setTitle("Schomburg Apartments");
+            bldgNames = getResources().getStringArray(R.array.schomarr);
+            ids = getResources().getIntArray(R.array.schomids);
+            createMenu();
+        }
+        else if (quad.equals("chapin")) {
+            setTitle("Chapin Apartments");
+            bldgNames = getResources().getStringArray(R.array.chaparr);
+            ids = getResources().getIntArray(R.array.chapids);
+            createMenu();
+        }
+        else if (quad.equals("west")) {
+            setTitle("West Apartments");
+            bldgNames = getResources().getStringArray(R.array.westarr);
+            ids = getResources().getIntArray(R.array.westids);
+            createMenu();
+        }
+        else if (quad.equals("hquad")) {
+            setTitle("H Quad");
+            bldgNames = getResources().getStringArray(R.array.hquadarr);
+            ids = getResources().getIntArray(R.array.hquadids);
+            createMenu();
+        }
+        else if (quad.equals("noble")) {
+            setTitle("Mendelson Quad");
+            bldgNames = getResources().getStringArray(R.array.noblearr);
+            ids = getResources().getIntArray(R.array.noblidse);
+            createMenu();
+        }
 	}
 
 	public void createMenu() {

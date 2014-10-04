@@ -63,14 +63,14 @@
 			android:layout_height="wrap_content"
 			android:id="@+id/schomb"
 			android:text="@string/schomburg"
-			android:onClick="schomb"
+			android:onClick="schom"
 			android:layout_below="@+id/roth"/>
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/tabler"
 			android:text="@string/tabler"
-			android:onClick="tablerd"
+			android:onClick="table"
 			android:layout_below="@+id/schomb"/>
 		<Button
 			android:layout_width="match_parent"

@@ -56,9 +56,82 @@ public class Building extends Activity {
                     setTitle(bldgNames[i] + " Machine Status");
             }
         }
-        if(quad.equals("roth")) {
+        else if(quad.equals("roth")) {
             bldgNames = getResources().getStringArray(R.array.rotharr);
             ids = getResources().getIntArray(R.array.rothids);
+            for(int i=0;i<ids.length;i++) {
+                if (id == ids[i])
+                    setTitle(bldgNames[i] + " Machine Status");
+            }
+        }
+        else if(quad.equals("hquad")) {
+            bldgNames = getResources().getStringArray(R.array.hquadarr);
+            ids = getResources().getIntArray(R.array.hquadids);
+            for(int i=0;i<ids.length;i++) {
+                if (id == ids[i])
+                    setTitle(bldgNames[i] + " Machine Status");
+            }
+        }
+
+        else if(quad.equals("kelly")) {
+            bldgNames = getResources().getStringArray(R.array.kellyarr);
+            ids = getResources().getIntArray(R.array.kellyids);
+            for(int i=0;i<ids.length;i++) {
+                if (id == ids[i])
+                    setTitle(bldgNames[i] + " Machine Status");
+            }
+        }
+        else if(quad.equals("noble")) {
+            bldgNames = getResources().getStringArray(R.array.noblearr);
+            ids = getResources().getIntArray(R.array.noblidse);
+            for(int i=0;i<ids.length;i++) {
+                if (id == ids[i])
+                    setTitle(bldgNames[i] + " Machine Status");
+            }
+        }
+        else if(quad.equals("west")) {
+            bldgNames = getResources().getStringArray(R.array.westarr);
+            ids = getResources().getIntArray(R.array.westids);
+            for(int i=0;i<ids.length;i++) {
+                if (id == ids[i])
+                    setTitle(bldgNames[i] + " Machine Status");
+            }
+        }
+        else if(quad.equals("roose")) {
+            bldgNames = getResources().getStringArray(R.array.roosearr);
+            ids = getResources().getIntArray(R.array.rooseids);
+            for(int i=0;i<ids.length;i++) {
+                if (id == ids[i])
+                    setTitle(bldgNames[i] + " Machine Status");
+            }
+        }
+        else if(quad.equals("table")) {
+            bldgNames = getResources().getStringArray(R.array.tablarr);
+            ids = getResources().getIntArray(R.array.tablids);
+            for(int i=0;i<ids.length;i++) {
+                if (id == ids[i])
+                    setTitle(bldgNames[i] + " Machine Status");
+            }
+        }
+        else if(quad.equals("schom")) {
+            bldgNames = getResources().getStringArray(R.array.schomarr);
+            ids = getResources().getIntArray(R.array.schomids);
+            for(int i=0;i<ids.length;i++) {
+                if (id == ids[i])
+                    setTitle(bldgNames[i] + " Machine Status");
+            }
+        }
+        else if(quad.equals("chapin")) {
+            bldgNames = getResources().getStringArray(R.array.chaparr);
+            ids = getResources().getIntArray(R.array.chapids);
+            for(int i=0;i<ids.length;i++) {
+                if (id == ids[i])
+                    setTitle(bldgNames[i] + " Machine Status");
+            }
+        }
+        else if(quad.equals("south")) {
+            bldgNames = getResources().getStringArray(R.array.southarr);
+            ids = getResources().getIntArray(R.array.southids);
             for(int i=0;i<ids.length;i++) {
                 if (id == ids[i])
                     setTitle(bldgNames[i] + " Machine Status");

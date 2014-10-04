@@ -167,7 +167,7 @@
         <item name="toscanB">88000521</item>
     </integer-array>
 
-    <string-array name="westarr">
+    <integer-array name="westids">
         <item name="bldgA1">88000542</item>
         <item name="bldgA2">88000543</item>
         <item name="bldgA3">88000544</item>
@@ -195,9 +195,9 @@
         <item name="bldgI1">88000566</item>
         <item name="bldgI2">88000567</item>
         <item name="bldgI3">88000568</item>
-    </string-array>
+    </integer-array>
 
-    <integer-array name="westids">
+    <string-array name="westarr">
         <item name="bldgA1">Building A1</item>
         <item name="bldgA2">Building A2</item>
         <item name="bldgA3">Building A3</item>
@@ -225,7 +225,7 @@
         <item name="bldgI1">Building I1</item>
         <item name="bldgI2">Building I2</item>
         <item name="bldgI3">Building I3</item>
-    </integer-array>
+    </string-array>
 
     <string name="title_activity_mendy">Quad Menu</string>
     <string name="hello_world">Hello world!</string>

@@ -46,4 +46,58 @@ public class MainMenuActivity extends Activity {
         intent.putExtra("quad", "roth");
         startActivity(intent);
     }
+
+    public void hquad(View v) {
+        Intent intent = new Intent(this, QuadMenu.class);
+        intent.putExtra("quad", "hquad");
+        startActivity(intent);
+    }
+
+    public void chapin(View v) {
+        Intent intent = new Intent(this, QuadMenu.class);
+        intent.putExtra("quad", "chapin");
+        startActivity(intent);
+    }
+
+    public void kelly(View v) {
+        Intent intent = new Intent(this, QuadMenu.class);
+        intent.putExtra("quad", "kelly");
+        startActivity(intent);
+    }
+
+    public void noble(View v) {
+        Intent intent = new Intent(this, QuadMenu.class);
+        intent.putExtra("quad", "noble");
+        startActivity(intent);
+    }
+
+    public void roose(View v) {
+        Intent intent = new Intent(this, QuadMenu.class);
+        intent.putExtra("quad", "roose");
+        startActivity(intent);
+    }
+
+    public void schom(View v) {
+        Intent intent = new Intent(this, QuadMenu.class);
+        intent.putExtra("quad", "schom");
+        startActivity(intent);
+    }
+
+    public void table(View v) {
+        Intent intent = new Intent(this, QuadMenu.class);
+        intent.putExtra("quad", "table");
+        startActivity(intent);
+    }
+
+    public void west(View v) {
+        Intent intent = new Intent(this, QuadMenu.class);
+        intent.putExtra("quad", "west");
+        startActivity(intent);
+    }
+
+    public void south(View v) {
+        Intent intent = new Intent(this, QuadMenu.class);
+        intent.putExtra("quad", "south");
+        startActivity(intent);
+    }
 }
