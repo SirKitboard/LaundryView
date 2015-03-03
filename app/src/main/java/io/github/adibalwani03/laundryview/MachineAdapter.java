@@ -44,7 +44,7 @@ public class MachineAdapter extends ArrayAdapter<Machine> {
 				if(p.getWasher())
 					tv1.setText("Washer #" + p.getMachineNo());
 				else {
-					tv1.setText("Drier #" + p.getMachineNo());
+					tv1.setText("Dryer #" + p.getMachineNo());
 				}
 			}
 			if(tv2!=null) {

@@ -1,17 +1,27 @@
 package io.github.adibalwani03.laundryview;
 
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.AlertDialog;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.AlarmClock;
 import android.text.Html;
 import android.text.Spanned;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
@@ -24,6 +34,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 
@@ -42,7 +53,7 @@ public class Building extends Activity {
 	RequestTask requestTask;
 	RequestTask requestTask2;
 	int status = 0;
-
+    Long temp;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -142,6 +153,7 @@ public class Building extends Activity {
 		setContentView(R.layout.activity_building);
 		//RefreshTimer refreshTimer = new RefreshTimer();
 		//refreshTimer.start();
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 		dialog = ProgressDialog.show(Building.this, "", "Loading. Please wait...", true);
 		requestTask = new RequestTask();
 		requestTask2 = new RequestTask();
@@ -164,6 +176,10 @@ public class Building extends Activity {
 		int id = item.getItemId();
 		if (id == R.id.action_reload) {
 			refreshData();
+		}
+		if (id == android.R.id.home) {
+			finish();
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -253,9 +269,48 @@ public class Building extends Activity {
 		}
 	}
 	public void display() {
-		ListView washersView = (ListView) findViewById(R.id.washerAvail);
+		final ListView washersView = (ListView) findViewById(R.id.washerAvail);
 		MachineAdapter machineAdapter =  new MachineAdapter(this,R.layout.machine_row,machineList);
 		washersView.setAdapter(machineAdapter);
+		washersView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                temp = l;
+                if(machineList.get(temp.intValue()).getMachineStatus()==2) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+
+                    builder.setTitle("Confirm");
+                    builder.setMessage("Are you sure?");
+
+                    builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent intentAlarm = new Intent(getApplicationContext(), AlarmReceiver.class);
+                            intentAlarm.putExtra("machineNo", temp.intValue());
+                            intentAlarm.putExtra("washer", (temp.intValue() < washers));
+                            AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+                            long time = System.currentTimeMillis() + (machineList.get(temp.intValue()).getMinsLeft()*60*1000);
+                            alarmManager.set(AlarmManager.RTC_WAKEUP, time, PendingIntent.getBroadcast(getApplicationContext(), 1, intentAlarm, PendingIntent.FLAG_UPDATE_CURRENT));
+                            Toast.makeText(getApplicationContext(), "Alarm Set for "+machineList.get(temp.intValue()).getMinsLeft()+" minutes!", Toast.LENGTH_LONG).show();
+                            dialog.dismiss();
+                        }
+
+                    });
+
+                    builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            // Do nothing
+                            dialog.dismiss();
+                        }
+                    });
+
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
+			}
+		});
 		dialog.hide();
 
 	}

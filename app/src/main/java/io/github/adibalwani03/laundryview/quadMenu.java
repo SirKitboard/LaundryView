@@ -1,5 +1,6 @@
 package io.github.adibalwani03.laundryview;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ public class QuadMenu extends Activity {
 		super.onCreate(savedInstanceState);
 		quad = this.getIntent().getExtras().getString("quad");
 		setContentView(R.layout.activity_quad_menu);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 		if (quad.equals("mendy")) {
             setTitle("Mendelson Quad");
 			bldgNames = getResources().getStringArray(R.array.mendyarr);
@@ -112,6 +114,7 @@ public class QuadMenu extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.mendy, menu);
+
 		return true;
 	}
 
@@ -122,6 +125,10 @@ public class QuadMenu extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
+			return true;
+		}
+		if (item.getItemId() == android.R.id.home) {
+			finish();
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
