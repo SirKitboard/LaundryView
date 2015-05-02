@@ -1,5 +1,6 @@
 package io.github.adibalwani03.laundryview;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
@@ -11,6 +12,8 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.AlarmClock;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.Spanned;
 import android.view.Menu;
@@ -38,7 +41,7 @@ import java.util.GregorianCalendar;
 import java.util.List;
 
 
-public class Building extends Activity {
+public class Building extends ActionBarActivity {
 	int id;
     String quad;
     String[] bldgNames;
@@ -153,7 +156,9 @@ public class Building extends Activity {
 		setContentView(R.layout.activity_building);
 		//RefreshTimer refreshTimer = new RefreshTimer();
 		//refreshTimer.start();
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		setSupportActionBar(toolbar);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		dialog = ProgressDialog.show(Building.this, "", "Loading. Please wait...", true);
 		requestTask = new RequestTask();
 		requestTask2 = new RequestTask();
@@ -279,8 +284,8 @@ public class Building extends Activity {
                 if(machineList.get(temp.intValue()).getMachineStatus()==2) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
 
-                    builder.setTitle("Confirm");
-                    builder.setMessage("Are you sure?");
+                    builder.setTitle("Set Alarm?");
+                    builder.setMessage("Set an alarm for " + machineList.get(temp.intValue()).getMinsLeft() + " minutes?");
 
                     builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
 

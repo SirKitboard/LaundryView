@@ -3,15 +3,19 @@ package io.github.adibalwani03.laundryview;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.PixelFormat;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.support.v7.widget.Toolbar;
 
 
-public class QuadMenu extends Activity {
+public class QuadMenu extends ActionBarActivity {
 	String quad;
 	String[] bldgNames;
 	int[] ids;
@@ -20,11 +24,14 @@ public class QuadMenu extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		//setSupportActionBar(toolbar);
 		quad = this.getIntent().getExtras().getString("quad");
 		setContentView(R.layout.activity_quad_menu);
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		Toolbar mToolBar = (Toolbar) findViewById(R.id.toolbar);
+		setSupportActionBar(mToolBar);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		if (quad.equals("mendy")) {
-            setTitle("Mendelson Quad");
+            setTitle("Mendelsohn Quad");
 			bldgNames = getResources().getStringArray(R.array.mendyarr);
 			ids = getResources().getIntArray(R.array.mendyids);
 			createMenu();
@@ -96,13 +103,14 @@ public class QuadMenu extends Activity {
 		for (int i = 0; i < bldgNames.length; i++) {
 			Button btn = new Button(this);
 			btn.setText(bldgNames[i]);
+			btn.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 150));
 			final int pos = i;
 			btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View view) {
 					Intent intent = new Intent(getBaseContext(), Building.class);
 					intent.putExtra("id",ids[pos]);
-                    intent.putExtra("quad", "mendy");
+                    intent.putExtra("quad", quad);
 					startActivity(intent);
 				}
 			});
@@ -113,7 +121,7 @@ public class QuadMenu extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.mendy, menu);
+		getMenuInflater().inflate(R.menu.my, menu);
 
 		return true;
 	}

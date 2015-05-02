@@ -1,9 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="io.github.adibalwani03.laundryview.Building" >
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      tools:context="io.github.adibalwani03.laundryview.Building">
     <item android:id="@+id/action_reload"
         android:title="Refresh"
         android:icon="@drawable/refresh"
         android:orderInCategory="100"
-        android:showAsAction="always" />
+        app:showAsAction="always"/>
 </menu>
